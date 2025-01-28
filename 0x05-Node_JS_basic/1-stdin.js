@@ -1,10 +1,19 @@
-const message1 = "Welcome to ALX, what is your name?";
-console.log(message1);
-process.stdin.on("data", data => {
-	    data = data.toString();
-	    process.stdout.write("Your name is: "+ data);
-	    process.exit();
+#!/usr/bin/node
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
 });
-process.on("exit", data => {
-	console.log("This important software is now closing");
+
+console.log('Welcome to ALX, what is your name?');
+
+rl.on('line', (input) => {
+  console.log(`Your name is: ${input}`);
+  rl.close();
+});
+
+rl.on('close', () => {
+  console.log('This important software is now closing');
 });
