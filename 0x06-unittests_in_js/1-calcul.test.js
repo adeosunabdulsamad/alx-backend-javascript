@@ -17,8 +17,8 @@ describe('calculateNumber', function () {
             assert.strictEqual(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
         });
 
-        it('should return 1 when subtracting 3.7 and 2.4', function () {
-            assert.strictEqual(calculateNumber('SUBTRACT', 3.7, 2.4), 1);
+        it('should return 2 when subtracting 3.7 and 2.4', function () {
+            assert.strictEqual(calculateNumber('SUBTRACT', 3.7, 2.4), 2);
         });
     });
 
