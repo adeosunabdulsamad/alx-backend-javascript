@@ -7,8 +7,8 @@ describe('calculateNumber', function () {
             assert.strictEqual(calculateNumber('SUM', 1.4, 4.5), 6);
         });
 
-        it('should return -3 when adding -1.4 and -1.5', function () {
-            assert.strictEqual(calculateNumber('SUM', -1.4, -1.5), -3);
+        it('should return -2 when adding -1.4 and -1.5', function () {
+            assert.strictEqual(calculateNumber('SUM', -1.4, -1.5), -2);
         });
     });
 
